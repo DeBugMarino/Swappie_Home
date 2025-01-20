@@ -2,6 +2,14 @@
 * {
   font-family: Arial, sans-serif; /* Font generico ma da cambiare come nella cartella */
 }
+body {
+  font-family: "Lato", sans-serif;
+  color: #333333;
+  text-align: left;
+  background-color: #fff;
+  font-weight: 400;+
+  
+}
 /* Header */
 /* Little Header */
 /* Header Main */
@@ -13,8 +21,254 @@
 /* Articles */
 /* Recensioni */
 /* Articoli */
+.cards-container-p {
+  display: flex;
+  margin: 20px;
+  padding: 2rem 2rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  letter-spacing: -0.003em;
+  color: rgb(51, 51, 51);
+  gap: 2rem;
+}
+.card-p {
+  position: relative;
+  flex: 1;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+.card-p img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.card-content-p {
+  padding: 1rem 1rem;
+}
+.card-content-p h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.card-content-p p {
+  font-size: 16px;
+  color: #555;
+  margin: auto auto 1rem;
+}
+.card-content-p a {
+  color: rgb(34, 44, 155);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.card-content-p a:hover {
+  text-decoration: none;
+  color: rgb(109, 118, 215);
+}
+
+.header_card3 {
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  background: rgb(187, 234, 247);
+  z-index: 0;
+}
+.contenitore-cerchi {
+  z-index: -1;
+  position: absolute;
+  inset: 0px;
+  transform: scale(2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#card3-p {
+  font-size: 1.125rem;
+}
+.cerchi-p {
+  overflow: hidden;
+  vertical-align: middle;
+  transform: rotate(-40deg);
+}
+.header_card3 p {
+  margin-right: 4rem;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+  color: rgb(34, 44, 155);
+  font-weight: 600;
+  font-family: Poppins;
+  line-height: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: left;
+}
+.icon-swappie-care {
+  margin-left: 274px;
+  position: absolute;
+  height: 3rem;
+  width: 4.1rem;
+  font-size: 0.8em;
+  font-family: poppins;
+  color: #222c9b;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 1.2rem;
+  line-height: 0.7;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .card-p {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cards-container-p {
+    flex-direction: column;
+    padding: 2rem 0rem;
+  }
+  .header_card3 p {
+    margin-right: 60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header_card3 p {
+    font-size: 1.125rem;
+    padding: 0px 15px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .icon-swappie-care {
+    right: 1rem;
+  }
+}
+.link_invisibile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  z-index: 1;
+}
 /* Green */
 /* Post */
+.post-recenti {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 40px;
+  padding: 2rem 0px;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  letter-spacing: -0.003em;
+  color: rgb(51, 51, 51);
+  justify-content: space-evenly;
+}
+.post_recenti_title {
+  font-size: 1.75rem;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.cards_ps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  gap: 20px;
+  box-sizing: border-box;
+}
+.card_ps {
+  flex: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 16px 0px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  color: rgb(51, 51, 51);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+  height: auto;
+  text-align: center;
+}
+.card_ps img {
+  height: 120px;
+  margin-bottom: -0.25rem;
+  object-fit: cover;
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.card_ps p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(51, 51, 51);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 0 24px 20px;
+  margin: 0px;
+}
+.card_ps a {
+  text-align: center;
+  padding: 0px 1.25rem 1.25rem 1.25rem;
+  color: rgb(34, 44, 155);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8725rem;
+  font-weight: 600;
+}
+.card_ps h3 {
+  padding: 16px 24px;
+  margin: 0px;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .cards_ps {
+    max-width: 720px;
+    flex-direction: column;
+  }
+
+  .card_ps {
+    max-width: 100%;
+  }
+
+  .card_ps img {
+    height: 120px;
+  }
+}
+.card_ps a:hover {
+  color: rgb(109, 118, 215);
+}
+.link_invisibile_post_recenti {
+  position: absolute;
+  top: 0;
+  left: -19px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  z-index: 1;
+}
 /* Footer */
 /* Newsletter */
 /* Lista */
