@@ -1,7 +1,4 @@
 /* Main */
-* {
-  font-family: Arial, sans-serif; /* Font generico ma da cambiare come nella cartella */
-}
 /* Header */
 /* Little Header */
 /* Header Main */
@@ -18,50 +15,4 @@
 /* Footer */
 /* Newsletter */
 /* Lista */
-.footer_list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  width: 100%;
-  padding: 20px;
-}
-
-.column_list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.column_list h2 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.column_list ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.column_list ul li {
-  margin-bottom: 8px;
-}
-
-.column_list ul li a {
-  text-decoration: none;
-  color: #5c6468;
-  transition: color 0.3s ease;
-}
-
-.column_list ul li a:hover {
-  color: #282c30;
-}
-
-@media (max-width: 768px) {
-  .footer_list {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-}
 /* Info */
