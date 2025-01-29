@@ -17,13 +17,133 @@ body {
 /* Hero Section */
 /* Explorer */
 /* Iphone */
+
+.iphone__box{
+  width: 128px;
+  height: 135px;
+  padding: 0.5rem 0px 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 16px 0px;
+  border-radius: 20px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+
+}
+.iphones__section {
+ background-color: rgb(245 245 245 );
+
+}
+
+.iphones__scroll {
+  display: flex;    
+  flex-direction: row;
+  margin: auto 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.iphone__box p {
+  width: 7rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin: auto;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #333333;
+}
+.iphone__box img {
+  height: 92px;
+  width: 92px;
+  margin-left: 0.5rem;
+}
+.iphone__box a {
+  text-decoration: none;
+  position: absolute;
+}
+.miglior_prezzo{
+  margin-top: 8.5rem;
+  border: 2px solid rgb(255, 204, 243);
+  border-radius: 6rem;
+  width: min-content;
+  min-width: min-content;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  z-index: 2;
+  background-color: rgb(255, 204, 243);
+  color: rgb(60, 18, 99);
+  white-space: nowrap;
+}
+.miglior_prezzo p {
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.5rem;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+}
+.icon__freccia {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -85px;
+  margin-left: 1230px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px 0px;
+}
+ 
+@media screen and (max-width: 1105px) {
+  .iphone__box {
+      width: 90px;
+      height: 110px;
+      padding: 0.5rem 0px 0.75rem
+  }
+  
+  .iphones__scroll{
+      overflow-y: scroll;
+      height: 170px;
+      flex-wrap: nowrap;
+      display: -webkit-box;
+      gap: 20px;
+      position: relative;
+  }
+
+  .iphone__box p {
+      width: auto;
+      font-size: 12px;
+  }
+  .miglior_prezzo{
+      margin-top: 7rem;
+  }
+
+  .iphone__box img{
+      width: 72px;
+      height: 72px;
+  }
+  .iphones__section {
+      height: 160px;
+}
+ ::-webkit-scrollbar {
+  display: none;
+  
+}
+.icon__freccia {
+  display: none;
+}
+}
 /* Scopri Le categorie */
 /* Articles */
 /* Recensioni */
 /* Articoli */
 .cards-container-p {
   display: flex;
-  margin: 20px;
+  margin: 20px; 
   padding: 2rem 2rem;
   font-size: 1.125rem;
   line-height: 1.25;
