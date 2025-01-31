@@ -7,14 +7,162 @@ body {
   color: #333333;
   text-align: left;
   background-color: #fff;
-  font-weight: 400;+
-  
-}
+  font-weight: 400;
+} 
+
 /* Header */
 /* Little Header */
 /* Header Main */
 /* Header offerta */
 /* Hero Section */
+.call_to_act_section{
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255, 251, 147);
+  color: rgb(51, 51, 51);
+  width: 100%;
+  display: flex; 
+}
+.call_cerchi_conteiner {
+  margin-left: -78px;
+  position: absolute;
+  
+}
+.svg_cerchi_cta {
+   width: 700px;
+  height: 350px;
+  transform: rotate(-45deg) 
+}
+
+.photo_conteiner_cta{
+ position: absolute;
+ width: 32rem;
+ height: 20.5rem;
+ z-index: 1;
+}
+
+.img_cta {
+  width: 32rem;
+ height: 20.5rem;
+}
+
+.main_call_to_act {
+  z-index: 1;
+  margin-left: 508px;;
+  text-align: left;
+  padding-top: 3.3rem;
+}
+
+.main_call_to_act h1 {
+  font-family: poppins, sans-serif;
+  color: rgb(34, 44, 155);
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin: 0;
+}
+
+
+.main_call_to_act p {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: rgb(34, 44, 155);
+  font-size: 1rem;
+  
+}
+
+.tasti_call_to_act {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  min-height: 52px;
+  font-size: 1.125rem;
+  padding: 0.1rem 1rem 4rem;
+  
+ 
+}
+.Button_1_cta, .Button_2_cta {
+  border: 2px solid rgb(34, 44, 155);
+  background-color: rgb(34, 44, 155);;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+}
+
+.Button_2_cta {
+  border: 2px solid rgb(34, 44, 155);
+  background-color: transparent;
+  color: rgb(34, 44, 155);
+}
+
+@media screen and (max-width: 990px) {
+  .call_to_act_section{
+  justify-content: center;
+}
+  .photo_conteiner_cta {
+      display: none;
+  }
+
+  .call_cerchi_conteiner {
+      max-width: 1300px;
+      margin: 0px auto;
+      height: 100%;
+  }
+
+  .svg_cerchi_cta {
+      width: 950px;
+      height: 450px;
+      transform: rotate(-25deg);
+      
+  } 
+  .main_call_to_act {
+      width: 100%;
+      margin-left: 0px;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px){
+   .svg_cerchi_cta {
+      width: 600px;
+      height: 300px;
+      transform: rotate(-45deg);    
+  }
+  
+  .main_call_to_act h1 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+  }
+  .main_call_to_act p {
+      font-size: 1rem;
+     
+  }
+
+  .tasti_call_to_act {
+      flex-direction: column;
+      width: 90%;
+      padding-bottom: 1.5rem;
+      
+  }
+  .Button_1_cta, .Button_2_cta {
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+  }
+  .main_call_to_act {
+      padding-top: 1.5rem;
+  }
+}
+
+
 /* Explorer */
 /* Iphone */
 
@@ -35,6 +183,7 @@ body {
 }
 .iphones__section {
  background-color: rgb(245 245 245 );
+ padding-top: 1rem;
 
 }
 
@@ -94,7 +243,7 @@ body {
   border-radius: 10px;
   position: absolute;
   margin-top: -85px;
-  margin-left: 1230px;
+  right: 19px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px 0px;
 }
  
