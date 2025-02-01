@@ -14,6 +14,134 @@ body {
 /* Explorer */
 /* Iphone */
 /* Scopri Le categorie */
+.discover-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+
+
+}
+
+.category-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.product-image::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: #fdd7ef;
+  border-radius: 50%;
+  top: 1%;
+  left: 35%;
+  z-index: -1;
+}
+
+.product-image::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: #FFCCF3;
+  border-radius: 50%;
+  top: 50%;
+  left: 1%;
+  z-index: -1;
+}
+
+.category-container {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+.category-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 20px;
+  height: 50px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 20px 2px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  overflow: hidden;
+}
+
+.category-box img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 6px;
+  object-fit: contain;
+}
+
+.battery-category { background-image: url('assets/img/general/circle/cerchioblue.svg'); }
+.budget-category { background-image: url('assets/img/general/circle/cerchioverde.svg'); }
+.camera-category { background-image: url('assets/img/general/circle/cerchiogiallo--.svg'); }
+.parent-favorite-category { background-image: url('assets/img/general/circle/cerchiofucs.svg'); }
+
+.premium-box {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 20px;
+  width: 700px;
+  height: 110px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 8px 0px;
+  background-image: url('assets/img/general/circle/cerchioblue.svg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: flex-start;
+  position: relative;
+}
+
+.premium-box img {
+  width: 22%;
+  height: auto;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.premium-box span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
 /* Articles */
 /* Recensioni */
 
@@ -203,4 +331,136 @@ body {
   }
 }
 
-/* Info */
+@media (max-width: 990px) {
+  .product-image {
+      display: none;
+      background-size: contain;
+  }
+
+  .discover-section {
+      justify-content: center;
+      padding: 20px;
+  }
+
+  .category-grid {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+  }
+}
+
+@media (max-width: 740px) {
+  .premium-box {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+      width: 100%;
+      height: auto;
+  }
+
+  .premium-box img {
+      display: none;
+  }
+
+  .premium-box::before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-image: url('assets/img/general/diamond.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-bottom: 10px;
+  }
+
+  .premium-box span {
+      font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .review_trustpilot {
+    flex: 0 1 calc(33.33% - 20px);
+  }
+  .articles_reviews_box .review_trustpilot:nth-child(4) {
+    display: none;
+  }
+
+  .footer_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 992px) {
+  .review_trustpilot {
+    flex: 0 1 calc(50% - 20px);
+  }
+  .articles_reviews_box .review_trustpilot:nth-child(n+3) {
+    display: none;
+  }
+
+  .footer_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-image {
+    display: none;
+    background-size: contain;
+  }
+
+  .discover-section {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .category-grid {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer_list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .review_trustpilot {
+    flex: 0 1 100%;
+  }
+  .articles_reviews_box .review_trustpilot:nth-child(n+2) {
+    display: none;
+  }
+
+  .premium-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+  }
+
+  .premium-box img {
+    display: none;
+  }
+
+  .premium-box::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('assets/img/general/diamond.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+
+  .premium-box span {
+    font-size: 1.2rem;
+  }
+}
