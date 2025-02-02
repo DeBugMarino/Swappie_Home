@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.newsletter {
+  color: #333333;
+  background-color: rgb(255, 251, 147);
+  text-align: center;
+  padding: 1.5rem 1.5rem 2rem;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.sconto {
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
+
+.offerte {
+  margin-bottom: 10px;
+}
+
+.email {
+  border: 2px solid rgb(134, 134, 134);
+  border-radius: 10px;
+  min-width: 17.5rem;
+  margin-right: 15px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  border: 2px solid transparent;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 40px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background-color: rgb(240, 240, 240);
+  color: rgb(134, 134, 134);
+}
+
+.btn:hover {
+  background-color: rgb(34, 44, 155);
+  color: rgb(255, 255, 255);
+}
+
+.informative > a {
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 1rem;
+  }
+
+  .sconto {
+    font-size: 1.4em;
+  }
+
+  .email {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sconto {
+    font-size: 1.2em;
+  }
+
+  .email {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
