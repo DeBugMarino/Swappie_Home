@@ -3,6 +3,159 @@
   padding: 0;
   box-sizing: border-box;
 }
+.body {
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  background-color: rgb(245, 245, 245);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.nav {
+  justify-content: center;
+  align-items: center;
+}
+.consumatori {
+  display: flex;
+  list-style-type: none;
+  gap: 70px;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  color: black;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .swappie {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+select {
+  border: none;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.profile svg {
+  width: 30px;
+  height: 30px;
+  gap: 80px;
+}
+
+.cart {
+  display: flex;
+  list-style-type: none;
+}
+
+.cart svg {
+  width: 40px;
+  height: 40px;
+  gap: 70px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.hamburger div {
+  width: 35px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: black;
+  margin: 5px 0;
+}
+
+.downnav {
+  text-align: center;
+  background-color: rgb(255, 204, 243);
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(60, 18, 99);
+}
+
+@media screen and (max-width: 990px) {
+  .consumatori li {
+    display: none;
+  }
+
+  .consumatori li:first-child {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: left;
+    margin-right: 90px;
+  }
+
+  .navbar {
+    display: flex;
+    padding: 20px;
+  }
+  .nav .info {
+    text-align: center;
+  }
+
+  .acquista {
+    display: none;
+  }
+
+  .vendi {
+    display: none;
+  }
+
+  .chisiamo {
+    display: none;
+  }
+
+  .recensioni {
+    display: none;
+  }
+
+  .aiuto {
+    display: none;
+  }
+
+  .navbar a {
+    display: flex;
+  }
+  .swappie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: right;
+  }
+}
 
 .newsletter {
   color: #333333;
