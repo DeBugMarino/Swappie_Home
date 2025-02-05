@@ -1088,10 +1088,235 @@ select {
 
 /* Articoli */
 /* Green */
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* Contenitore principale per Left e Right */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    width: 100%;
+    
+    height: 60vh; 
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    width: 100%;
+    height: 60vh; 
+}
+/* Sezione Left */
+.Left {
+    flex: 1;
+    background-color: rgb(228, 244, 239);
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+/* Titolo principale in Left */
+.Left h3 {
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0px;
+    color: rgb(34, 44, 155);
+}
+
+/* Contenitore dei cerchi */
+.circle {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    
+}
+
+/* Stili comuni per entrambi i cerchi */
+#cerchio1, #cerchio2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 5px;
+}
+
+/* Primo cerchio - Telefono Nuovo */
+#cerchio1 {
+    border: 8px solid rgb(34, 44, 155);
+}
+
+/* Secondo cerchio - Dispositivo Swappie */
+#cerchio2 {
+    border: 8px solid rgb(34, 44, 155);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    border-bottom-color: rgb(172, 177, 232);
+    border-left-color: rgb(172, 177, 232);
+    border-right-color: rgb(172, 177, 232);
+}
+
+
+#cerchio2txt {
+    text-align: center;
+    transform: rotate(-45deg);
+}
+
+/* Testo 78% */
+.Left .percentuale {
+    margin-top: 13px;
+    margin-bottom: -22px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 34pt;
+}
+
+.Left p {
+    margin-bottom: -13px;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.Left .info {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+/* Pulsante */
+#button {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    color: white;
+    background-color: rgb(34, 44, 155);
+    border: 2px solid transparent;
+    border-radius: 40px;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 43px;
+    width: 140px;
+    text-transform: uppercase;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #6b7cda;
+}
+
+/* Sezione Right */
+.Right {
+    flex: 1;
+    background-color: rgb(15, 66, 67);
+    text-align: center;
+    color: white;
+    box-sizing: border-box; 
+    padding: 20px;
+    overflow: hidden;
+    max-width: 100%;
+    
+    position: relative;
+    height: 100%; 
+}
+
+.Right p, .Right h3, .Right h2 {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.Right h3 {
+    line-height: 1.2;
+    margin: 0;
+    font-size: 22px;
+    padding: 30px;
+}
+
+.Right h2 {
+    margin: 0;
+    font-size: 39px;
+    padding: 30px;
+}
+
+.Right .container {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: -100px;
+    align-items: center; 
+}
+
+.Right .column {
+    margin: 10px;          
+    flex: 1;  
+}
+
+.Right img {
+    margin-bottom: -25px;
+}
+
+.Right .type {
+    margin-top: -50px;
+}
+
+.Right .desc {
+    margin-top: -20px;
+}
+
+.Right svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsività */
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column; 
+        height: 150vh;
+        
+    }
+    .container2{
+        flex-direction: column;
+    }
+
+    .Left{
+        flex: 1;
+        width: 100%;
+        height: auto;  
+    }
+
+    .Right{
+        flex: 2;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .Right .container {
+        flex-direction: row;  
+        justify-content: space-between;  
+    }
+}
+
+
 /* Post */
 /* Footer */
 /* Newsletter */
 /* Lista */
+<<<<<<< HEAD
 .footer_list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1313,3 +1538,110 @@ select {
   }
 }
 
+=======
+/* Info */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 70px;
+}
+
+.footer-column {
+    margin: 10px;
+    min-width: 150px;
+    flex: 1;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom{
+    
+    padding: 20px; 
+    height:10px; 
+    color: #666666;
+    
+    background-color: #e4e4e4; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.grey-link{
+    color: #666666;
+    text-decoration: none;
+}
+
+.payment-methods img, .delivery img {
+    max-width: 60px;
+    margin-right: 10p
+}
+
+.language-selector select {
+    padding: 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+#chart-button{
+    background-color: rgb(34, 44, 155);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    height: 40px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 20px;
+    border: none;
+    
+}
+#chart-button:hover{
+    background-color: #7874d4;
+    cursor: pointer;
+    
+}
+.social img{
+    max-width: 18px;
+    margin-right: 15p
+}
+>>>>>>> anthony_branch
