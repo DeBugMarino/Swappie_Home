@@ -1,18 +1,547 @@
 
 /* Main */
+<<<<<<< HEAD
+=======
+* {
+  font-family: Arial, sans-serif; /* Font generico ma da cambiare come nella cartella */
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: #333333;
+  text-align: left;
+  background-color: #fff;
+  font-weight: 400;
+} 
+
+>>>>>>> MartinaBranch
 /* Header */
 /* Little Header */
 /* Header Main */
 /* Header offerta */
 /* Hero Section */
+.call_to_act_section{
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255, 251, 147);
+  color: rgb(51, 51, 51);
+  width: 100%;
+  display: flex; 
+}
+.call_cerchi_conteiner {
+  margin-left: -78px;
+  position: absolute;
+  
+}
+.svg_cerchi_cta {
+   width: 700px;
+  height: 350px;
+  transform: rotate(-45deg) 
+}
+
+.photo_conteiner_cta{
+ position: absolute;
+ width: 32rem;
+ height: 20.5rem;
+ z-index: 1;
+}
+
+.img_cta {
+  width: 32rem;
+ height: 20.5rem;
+}
+
+.main_call_to_act {
+  z-index: 1;
+  margin-left: 508px;;
+  text-align: left;
+  padding-top: 3.3rem;
+}
+
+.main_call_to_act h1 {
+  font-family: poppins, sans-serif;
+  color: rgb(34, 44, 155);
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin: 0;
+}
+
+
+.main_call_to_act p {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: rgb(34, 44, 155);
+  font-size: 1rem;
+  
+}
+
+.tasti_call_to_act {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  min-height: 52px;
+  font-size: 1.125rem;
+  padding: 0.1rem 1rem 4rem;
+  
+ 
+}
+.Button_1_cta, .Button_2_cta {
+  border: 2px solid rgb(34, 44, 155);
+  background-color: rgb(34, 44, 155);;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+}
+
+.Button_2_cta {
+  border: 2px solid rgb(34, 44, 155);
+  background-color: transparent;
+  color: rgb(34, 44, 155);
+}
+
+@media screen and (max-width: 990px) {
+  .call_to_act_section{
+  justify-content: center;
+}
+  .photo_conteiner_cta {
+      display: none;
+  }
+
+  .call_cerchi_conteiner {
+      max-width: 1300px;
+      margin: 0px auto;
+      height: 100%;
+  }
+
+  .svg_cerchi_cta {
+      width: 950px;
+      height: 450px;
+      transform: rotate(-25deg);
+      
+  } 
+  .main_call_to_act {
+      width: 100%;
+      margin-left: 0px;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px){
+   .svg_cerchi_cta {
+      width: 600px;
+      height: 300px;
+      transform: rotate(-45deg);    
+  }
+  
+  .main_call_to_act h1 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+  }
+  .main_call_to_act p {
+      font-size: 1rem;
+     
+  }
+
+  .tasti_call_to_act {
+      flex-direction: column;
+      width: 90%;
+      padding-bottom: 1.5rem;
+      
+  }
+  .Button_1_cta, .Button_2_cta {
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+  }
+  .main_call_to_act {
+      padding-top: 1.5rem;
+  }
+}
+
+
 /* Explorer */
 /* Iphone */
+
+.iphone__box{
+  width: 128px;
+  height: 135px;
+  padding: 0.5rem 0px 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 16px 0px;
+  border-radius: 20px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+
+}
+.iphones__section {
+ background-color: rgb(245 245 245 );
+ padding-top: 1rem;
+
+}
+
+.iphones__scroll {
+  display: flex;    
+  flex-direction: row;
+  margin: auto 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.iphone__box p {
+  width: 7rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin: auto;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #333333;
+}
+.iphone__box img {
+  height: 92px;
+  width: 92px;
+  margin-left: 0.5rem;
+}
+.iphone__box a {
+  text-decoration: none;
+  position: absolute;
+}
+.miglior_prezzo{
+  margin-top: 8.5rem;
+  border: 2px solid rgb(255, 204, 243);
+  border-radius: 6rem;
+  width: min-content;
+  min-width: min-content;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  z-index: 2;
+  background-color: rgb(255, 204, 243);
+  color: rgb(60, 18, 99);
+  white-space: nowrap;
+}
+.miglior_prezzo p {
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.5rem;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+}
+.icon__freccia {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -85px;
+  right: 19px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px 0px;
+}
+ 
+@media screen and (max-width: 1105px) {
+  .iphone__box {
+      width: 90px;
+      height: 110px;
+      padding: 0.5rem 0px 0.75rem
+  }
+  
+  .iphones__scroll{
+      overflow-y: scroll;
+      height: 170px;
+      flex-wrap: nowrap;
+      display: -webkit-box;
+      gap: 20px;
+      position: relative;
+  }
+
+  .iphone__box p {
+      width: auto;
+      font-size: 12px;
+  }
+  .miglior_prezzo{
+      margin-top: 7rem;
+  }
+
+  .iphone__box img{
+      width: 72px;
+      height: 72px;
+  }
+  .iphones__section {
+      height: 160px;
+}
+ ::-webkit-scrollbar {
+  display: none;
+  
+}
+.icon__freccia {
+  display: none;
+}
+}
 /* Scopri Le categorie */
 /* Articles */
 /* Recensioni */
 /* Articoli */
+.cards-container-p {
+  display: flex;
+  margin: 20px; 
+  padding: 2rem 2rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  letter-spacing: -0.003em;
+  color: rgb(51, 51, 51);
+  gap: 2rem;
+}
+.card-p {
+  position: relative;
+  flex: 1;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+.card-p img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.card-content-p {
+  padding: 1rem 1rem;
+}
+.card-content-p h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.card-content-p p {
+  font-size: 16px;
+  color: #555;
+  margin: auto auto 1rem;
+}
+.card-content-p a {
+  color: rgb(34, 44, 155);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.card-content-p a:hover {
+  text-decoration: none;
+  color: rgb(109, 118, 215);
+}
+
+.header_card3 {
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  background: rgb(187, 234, 247);
+  z-index: 0;
+}
+.contenitore-cerchi {
+  z-index: -1;
+  position: absolute;
+  inset: 0px;
+  transform: scale(2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#card3-p {
+  font-size: 1.125rem;
+}
+.cerchi-p {
+  overflow: hidden;
+  vertical-align: middle;
+  transform: rotate(-40deg);
+}
+.header_card3 p {
+  margin-right: 4rem;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+  color: rgb(34, 44, 155);
+  font-weight: 600;
+  font-family: Poppins;
+  line-height: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: left;
+}
+.icon-swappie-care {
+  margin-left: 274px;
+  position: absolute;
+  height: 3rem;
+  width: 4.1rem;
+  font-size: 0.8em;
+  font-family: poppins;
+  color: #222c9b;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 1.2rem;
+  line-height: 0.7;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .card-p {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cards-container-p {
+    flex-direction: column;
+    padding: 2rem 0rem;
+  }
+  .header_card3 p {
+    margin-right: 60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header_card3 p {
+    font-size: 1.125rem;
+    padding: 0px 15px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .icon-swappie-care {
+    right: 1rem;
+  }
+}
+.link_invisibile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  z-index: 1;
+}
 /* Green */
 /* Post */
+.post-recenti {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 40px;
+  padding: 2rem 0px;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  letter-spacing: -0.003em;
+  color: rgb(51, 51, 51);
+  justify-content: space-evenly;
+}
+.post_recenti_title {
+  font-size: 1.75rem;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.cards_ps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  gap: 20px;
+  box-sizing: border-box;
+}
+.card_ps {
+  flex: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 16px 0px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  color: rgb(51, 51, 51);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+  height: auto;
+  text-align: center;
+}
+.card_ps img {
+  height: 120px;
+  margin-bottom: -0.25rem;
+  object-fit: cover;
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.card_ps p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(51, 51, 51);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 0 24px 20px;
+  margin: 0px;
+}
+.card_ps a {
+  text-align: center;
+  padding: 0px 1.25rem 1.25rem 1.25rem;
+  color: rgb(34, 44, 155);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8725rem;
+  font-weight: 600;
+}
+.card_ps h3 {
+  padding: 16px 24px;
+  margin: 0px;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .cards_ps {
+    max-width: 720px;
+    flex-direction: column;
+  }
+
+  .card_ps {
+    max-width: 100%;
+  }
+
+  .card_ps img {
+    height: 120px;
+  }
+}
+.card_ps a:hover {
+  color: rgb(109, 118, 215);
+}
+.link_invisibile_post_recenti {
+  position: absolute;
+  top: 0;
+  left: -19px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  z-index: 1;
+}
 /* Footer */
 /* Newsletter */
 /* Lista */
@@ -245,6 +774,7 @@ select {
     margin-bottom: 15px;
   }
 }
+<<<<<<< HEAD
 
 @media (max-width: 480px) {
   .sconto {
@@ -260,4 +790,5 @@ select {
     padding: 0.5rem 0.8rem;
   }
 }
+
 
