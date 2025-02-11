@@ -3,8 +3,9 @@
 /* Main */
 
 * {
-  font-family: Arial, sans-serif; /* Font generico ma da cambiare come nella cartella */
+  font-family: poppins, sans-serif;
 }
+
 body {
   font-family: "Lato", sans-serif;
   color: #333333;
@@ -13,14 +14,6 @@ body {
   font-weight: 400;
 } 
 
-
-
-/* Main */
-
-/* Header */
-/* Little Header */
-/* Header Main */
-/* Header offerta */
 /* Hero Section */
 
 .call_to_act_section{
@@ -550,15 +543,8 @@ body {
 /* Newsletter */
 /* Lista */
 /* Info */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.body {
-  justify-content: center;
-  align-items: center;
-}
+
+
 .info {
   background-color: rgb(245, 245, 245);
   padding: 5px;
@@ -1088,10 +1074,7 @@ select {
 
 /* Articoli */
 /* Green */
-body {
-    overflow-x: hidden;
-    margin: 0;
-}
+
 
 /* Contenitore principale per Left e Right */
 .container {
@@ -1316,7 +1299,7 @@ body {
 /* Footer */
 /* Newsletter */
 /* Lista */
-<<<<<<< HEAD
+
 .footer_list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1538,14 +1521,8 @@ body {
   }
 }
 
-=======
 /* Info */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-}
+
 
 .footer {
     background-color: #f9f9f9;
@@ -1644,4 +1621,3 @@ body {
     max-width: 18px;
     margin-right: 15p
 }
->>>>>>> anthony_branch
