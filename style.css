@@ -532,8 +532,13 @@ body {
 /* Lista */
 /* Info */
 
+<<<<<<< HEAD
 .minibar {
   background-color: rgb(245, 245, 245);
+=======
+
+.info {
+>>>>>>> 0d5ef45144d7a7e0b5366ee7b1efde9fd2c84840
   padding: 5px;
   display: flex;
   justify-content: center;
