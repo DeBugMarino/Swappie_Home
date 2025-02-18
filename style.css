@@ -534,11 +534,13 @@ body {
 
 .minibar {
   background-color: rgb(245, 245, 245);
-  padding: 5px;
+  padding: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 99%;
+  margin: 0;
+  height: 20px;
 }
 .nav {
   justify-content: center;
@@ -558,10 +560,11 @@ body {
   list-style-type: none;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   cursor: pointer;
   color: black;
   gap: 30px;
+  padding: 25px;
+  margin: 0;
 }
 
 .navbar a {
@@ -623,6 +626,7 @@ select {
   align-items: center;
   cursor: pointer;
   color: rgb(60, 18, 99);
+  margin: 0;
 }
 
 @media screen and (max-width: 990px) {
