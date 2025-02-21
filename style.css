@@ -565,6 +565,9 @@ body {
   gap: 30px;
   padding: 25px;
   margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
 }
 
 .navbar a {
